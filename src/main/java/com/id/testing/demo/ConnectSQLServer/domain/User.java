@@ -21,165 +21,164 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(length = 10)
-    private String userid;
+    private String Userid;
     @Column(length = 10)
-    private String password;
+    private String Password;
     @Column(length = 50)
-    private String username;
-    private Character usertype;
-    private Integer validfordays;
-    private Boolean neverexpires; 
-    private Date passworddate;
-    private Boolean active;
+    private String Username;
+    private Character Usertype;
+    private Integer Validfordays;
+    private Boolean Neverexpires; 
+    private Date Passworddate;
+    private Boolean Active;
     @Column(length = 4)
-    private String branchid;
-    private Character deptid;
-    private Character jobgroup;
-    private Integer counter;
-    private Date lastupdate;
+    private String Branchid;
+    private Character Deptid;
+    private Character Jobgroup;
+    private Integer Counter;
+    private Date Lastupdate;
     @Column(length = 10)
-    private String lastuserid;
-    private Date createddate;
+    private String Lastuserid;
+    private Date Createddate;
     @Column(length = 10)
-    private String creatorid;
-    private Date lastlogin;
+    private String Creatorid;
+    private Date Lastlogin;
 
     public String getUserid() {
-        return userid;
+        return Userid;
     }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
+    public void setUserid(String Userid) {
+        this.Userid = Userid;
     }
 
     public String getPassword() {
-        return password;
+        return Password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassword(String Password) {
+        this.Password = Password;
     }
 
     public String getUsername() {
-        return username;
+        return Username;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUsername(String Username) {
+        this.Username = Username;
     }
 
     public Character getUsertype() {
-        return usertype;
+        return Usertype;
     }
 
-    public void setUsertype(Character usertype) {
-        this.usertype = usertype;
+    public void setUsertype(Character Usertype) {
+        this.Usertype = Usertype;
     }
 
     public Integer getValidfordays() {
-        return validfordays;
+        return Validfordays;
     }
 
-    public void setValidfordays(Integer validfordays) {
-        this.validfordays = validfordays;
+    public void setValidfordays(Integer Validfordays) {
+        this.Validfordays = Validfordays;
     }
 
     public Boolean getNeverexpires() {
-        return neverexpires;
+        return Neverexpires;
     }
 
-    public void setNeverexpires(Boolean neverexpires) {
-        this.neverexpires = neverexpires;
+    public void setNeverexpires(Boolean Neverexpires) {
+        this.Neverexpires = Neverexpires;
     }
 
     public Date getPassworddate() {
-        return passworddate;
+        return Passworddate;
     }
 
-    public void setPassworddate(Date passworddate) {
-        this.passworddate = passworddate;
+    public void setPassworddate(Date Passworddate) {
+        this.Passworddate = Passworddate;
     }
 
     public Boolean getActive() {
-        return active;
+        return Active;
     }
 
-    public void setActive(Boolean active) {
-        this.active = active;
+    public void setActive(Boolean Active) {
+        this.Active = Active;
     }
 
     public String getBranchid() {
-        return branchid;
+        return Branchid;
     }
 
-    public void setBranchid(String branchid) {
-        this.branchid = branchid;
+    public void setBranchid(String Branchid) {
+        this.Branchid = Branchid;
     }
 
     public Character getDeptid() {
-        return deptid;
+        return Deptid;
     }
 
-    public void setDeptid(Character deptid) {
-        this.deptid = deptid;
+    public void setDeptid(Character Deptid) {
+        this.Deptid = Deptid;
     }
 
     public Character getJobgroup() {
-        return jobgroup;
+        return Jobgroup;
     }
 
-    public void setJobgroup(Character jobgroup) {
-        this.jobgroup = jobgroup;
+    public void setJobgroup(Character Jobgroup) {
+        this.Jobgroup = Jobgroup;
     }
 
     public Integer getCounter() {
-        return counter;
+        return Counter;
     }
 
-    public void setCounter(Integer counter) {
-        this.counter = counter;
+    public void setCounter(Integer Counter) {
+        this.Counter = Counter;
     }
 
     public Date getLastupdate() {
-        return lastupdate;
+        return Lastupdate;
     }
 
-    public void setLastupdate(Date lastupdate) {
-        this.lastupdate = lastupdate;
+    public void setLastupdate(Date Lastupdate) {
+        this.Lastupdate = Lastupdate;
     }
 
     public String getLastuserid() {
-        return lastuserid;
+        return Lastuserid;
     }
 
-    public void setLastuserid(String lastuserid) {
-        this.lastuserid = lastuserid;
+    public void setLastuserid(String Lastuserid) {
+        this.Lastuserid = Lastuserid;
     }
 
     public Date getCreateddate() {
-        return createddate;
+        return Createddate;
     }
 
-    public void setCreateddate(Date createddate) {
-        this.createddate = createddate;
+    public void setCreateddate(Date Createddate) {
+        this.Createddate = Createddate;
     }
 
     public String getCreatorid() {
-        return creatorid;
+        return Creatorid;
     }
 
-    public void setCreatorid(String creatorid) {
-        this.creatorid = creatorid;
+    public void setCreatorid(String Creatorid) {
+        this.Creatorid = Creatorid;
     }
 
     public Date getLastlogin() {
-        return lastlogin;
+        return Lastlogin;
     }
 
-    public void setLastlogin(Date lastlogin) {
-        this.lastlogin = lastlogin;
+    public void setLastlogin(Date Lastlogin) {
+        this.Lastlogin = Lastlogin;
     }
-
     
     
 }

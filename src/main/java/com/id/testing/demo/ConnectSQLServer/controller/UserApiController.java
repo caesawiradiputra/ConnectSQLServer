@@ -7,8 +7,11 @@ package com.id.testing.demo.ConnectSQLServer.controller;
 
 import com.id.testing.demo.ConnectSQLServer.dao.UserDao;
 import com.id.testing.demo.ConnectSQLServer.domain.User;
+import com.id.testing.demo.ConnectSQLServer.mapper.UserMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.batch.item.file.mapping.DefaultLineMapper;
+import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -23,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/api/user")
 public class UserApiController {
     
     Logger logger = LoggerFactory.getLogger(UserApiController.class);
@@ -33,6 +36,13 @@ public class UserApiController {
     
     @GetMapping("/")
     public Page<User> getUserId(Pageable page) {
+        
         return userDao.findAll(page);
+    }
+    
+    @GetMapping("/{userid}")
+    public User getUserId(@PathVariable("userid") String userId) {
+        
+        return userDao.findOne(userId);
     }
 }
